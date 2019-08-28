@@ -1,9 +1,10 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 100%;
 }
 
@@ -12,30 +13,28 @@ body {
   font-size: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
 }
 
 .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-  overflow: hidden;
+  padding: 0rem;
 }
 
 .container-1 {
   background-color: #F1F4F5;
   background-image: url(../imgs/taco-bg.png);
   background-repeat: repeat;
+  max-height: 1024px;
 }
 
 img.logo {
-  height: 3vh;
+  height: 3.4vh;
   float: left;
-  margin: 2.8rem 2.2em;
+  margin: 2.5rem 2.2rem 4rem 2rem;
 }
 
-img.noah{
+img.noah {
   max-height: 80vh;
-  margin-top: 2rem;
+  margin-left: 4rem;
 }
 
 .caption {
@@ -43,50 +42,35 @@ img.noah{
   bottom: 1.5rem;
   right: -4rem;
   font-size: 0.7rem;
-  color:#999999;
-}
-
-.block-der {
-  margin-top: 5rem;
-  padding-left: 2rem;
+  color: #999999;
 }
 
 h1 {
-  font-size: 2.7rem;
-  line-height: 2.8rem;
+  font-size: 2.3rem;
+  line-height: 2.7rem;
   font-weight: 600;
-}
-
-.login {
-  margin: 1rem -1rem;
-  padding: 0.5rem;
-  
 }
 
 .input-email {
   font-size: 1.3rem;
   font-weight: 200;
-  padding: 0.6rem 4rem 0.6rem 0.6rem;
-  margin-left: -1rem;
-  border: 1px solid #2BBD3E;
+  padding: 0.7rem 3rem 0.7rem 1rem;
+  border: 1px solid lightgrey;
 }
 
 .boton-spice {
   color: white;
-  font-size: 1.3rem;
-  padding: 0.8rem 2.2rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
   background-color: #2BBD3E;
   box-shadow: 0.4rem 0.4rem 0 0 #16891E;
   border: none;
-  margin-left: -4.8rem;
 }
 
 .texto-1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 200;
-  margin-top: 0.5rem;
-  line-height: 1.8rem;
-  margin-left: -0.7rem;
+  line-height: 2rem;
 }
 
 .quote-title {
@@ -102,15 +86,54 @@ h1 {
   line-height: 2rem;
   padding: 0rem 2rem;
 }
+
 footer {
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
+
 .link-block {
   margin: 2rem 0rem 5rem 0rem;
 }
-.link{
+
+.link {
   color: #2BBD3E;
   line-height: 1.5rem;
   border-bottom: 2px solid #2BBD3E;
+}
+
+@media (min-width:1024px) {
+  h1 {
+    font-size: 2.7rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  img.noah {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .caption {
+    left: -6rem;
+  }
+  .texto-1 {
+    font-size: 1.3rem;
+  }
+  img.noah {
+    height: 340px;
+    margin-left: -1rem;
+  }
+}
+
+@media (max-width:767px) {
+  h1 {
+    text-align: center;
+  }
+  .contenedor-botones {
+    display: flex;
+    justify-content: center;
+  }
 }
